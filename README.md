@@ -7,3 +7,6 @@
 * 1.3 empirical_rf по градиенту центрального выхода и erf_std для effective receptive field
 * 2.1 MyBatchNorm2d с running статистиками, совместим по state_dict с nn.BatchNorm2d
 * 2.2 вывод весов после слияния, fuse_conv_bn и fuse_sequential, замер скорости
+* 3.1 вывод дисперсии для ReLU и tanh, activation_stds для MLP глубины 50 с разными инициализациями
+* 3.2 MyAdamW с группами параметров и флагом bias_correction, вывод длины шага без поправки
+* 3.3 cosine_lr для LambdaLR, проверено совпадение с CosineAnnealingLR
