@@ -10,3 +10,6 @@
 * 3.1 вывод дисперсии для ReLU и tanh, activation_stds для MLP глубины 50 с разными инициализациями
 * 3.2 MyAdamW с группами параметров и флагом bias_correction, вывод длины шага без поправки
 * 3.3 cosine_lr для LambdaLR, проверено совпадение с CosineAnnealingLR
+* 4.1 ResNetCIFAR глубины 6n + 2 с флагами residual и separable
+* 4.2 train_cifar с MyAdamW, cosine schedule до нуля и test accuracy после каждой эпохи
+* 4.3 сравнение plain-20 и plain-56 при одинаковом бюджете
