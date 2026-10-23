@@ -13,3 +13,8 @@
 * 4.1 ResNetCIFAR глубины 6n + 2 с флагами residual и separable
 * 4.2 train_cifar с MyAdamW, cosine schedule до нуля и test accuracy после каждой эпохи
 * 4.3 сравнение plain-20 и plain-56 при одинаковом бюджете
+* 5.1 pgd_l2 с нормированным шагом и проекцией на шар, сравнение с PGD в L_inf
+* 5.3 transfer атак FGSM и PGD-20 с model A на model B и MLP
+* 6.1 adversarial_train с PGD-7 и кривые robust accuracy по радиусу атаки
+* 6.2 sanity_checks с FGSM, PGD-20, PGD-100 с пятью рестартами и атакой радиуса 1
+* 6.3 input_gradient и доля массы градиента на фоне для обычной и робастной модели
