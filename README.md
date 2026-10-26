@@ -18,3 +18,7 @@
 * 6.1 adversarial_train с PGD-7 и кривые robust accuracy по радиусу атаки
 * 6.2 sanity_checks с FGSM, PGD-20, PGD-100 с пятью рестартами и атакой радиуса 1
 * 6.3 input_gradient и доля массы градиента на фоне для обычной и робастной модели
+* 7.2 conv2d_fft через rfft2 и einsum с поддержкой stride, padding и groups
+* 7.3 newton_schulz и ConvMuon для свёрточных весов, обучение ResNet-20 с Muon
+* 7.4 L0 атака на обычную и робастную модель
+* 7.5 catastrophic overfitting при обучении с FGSM и FGSM-RS
