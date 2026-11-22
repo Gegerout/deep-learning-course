@@ -1,0 +1,86 @@
+{
+  "track": "nlp",
+  "model": "cointegrated/rubert-tiny2",
+  "revision": "e8ed3b0c8bbf4fb6984c3de043bf7d2f4e5969ae",
+  "dataset": "Babelscape/wikineural",
+  "classes": [
+    "LOC",
+    "MISC",
+    "ORG",
+    "PER"
+  ],
+  "n_train": 12000,
+  "n_val": 2000,
+  "n_test": 2000,
+  "params_total": 29098929,
+  "baseline": {
+    "majority": {
+      "f1_micro": 0.44642503466032885,
+      "f1_macro": 0.3841321520619849,
+      "precision": 0.6065662002152853,
+      "recall": 0.3531808210592291
+    },
+    "random_head": {
+      "f1_micro": 0.029435132987779496,
+      "f1_macro": 0.027572158544311078,
+      "precision": 0.01673838209982788,
+      "recall": 0.12190535882168599
+    }
+  },
+  "final": {
+    "f1_micro": 0.8088726830750531,
+    "f1_macro": 0.764813632199049,
+    "precision": 0.7910846953937593,
+    "recall": 0.8274790177183712,
+    "token_f1": 0.8309778237389406,
+    "per_type": {
+      "LOC": {
+        "precision": 0.8774752475247525,
+        "recall": 0.9054916985951469,
+        "f1-score": 0.8912633563796354,
+        "support": 1566
+      },
+      "MISC": {
+        "precision": 0.6469428007889546,
+        "recall": 0.6693877551020408,
+        "f1-score": 0.6579739217652959,
+        "support": 490
+      },
+      "ORG": {
+        "precision": 0.6490299823633157,
+        "recall": 0.6996197718631179,
+        "f1-score": 0.6733760292772186,
+        "support": 526
+      },
+      "PER": {
+        "precision": 0.8118518518518518,
+        "recall": 0.862992125984252,
+        "f1-score": 0.8366412213740458,
+        "support": 635
+      }
+    }
+  },
+  "ablation": {
+    "setting": "freeze",
+    "full": {
+      "f1": 0.8133764832793959,
+      "seconds": 36.44428503099999,
+      "trainable": 29098929
+    },
+    "frozen": {
+      "f1": 0.50278940027894,
+      "seconds": 21.582081088000052,
+      "trainable": 2817
+    }
+  },
+  "errors": {
+    "correct": 2639,
+    "boundary": 167,
+    "type": 311,
+    "missed": 74,
+    "spurious": 132
+  },
+  "device": "Tesla T4",
+  "train_time_sec": 36.44428503099999,
+  "fast_mode": false
+}
